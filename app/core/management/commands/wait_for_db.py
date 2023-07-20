@@ -4,8 +4,6 @@ from django.db.utils import OperationalError
 from psycopg2 import OperationalError as Psycopg2Error
 
 class Command(BaseCommand):
-    
-    
     help = 'Django command to wait for the database'
 
     def handle(self, *args, **options):
